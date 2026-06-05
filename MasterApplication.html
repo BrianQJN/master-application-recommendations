@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绮洋硕士申请综合规划方案</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap');
+
+        :root {
+            --ink: #1a1a2e;
+            --ink-light: #3d3d5c;
+            --ink-muted: #6b6b8a;
+            --paper: #faf9f7;
+            --paper-warm: #f5f3ef;
+            --accent: #c9553d;
+            --accent-light: #e8725a;
+            --accent-glow: rgba(201, 85, 61, 0.08);
+            --gold: #b8860b;
+            --gold-light: #daa520;
+            --green: #2d7a4f;
+            --green-light: #3d9e68;
+            --blue: #2c5282;
+            --blue-light: #3182ce;
+            --tier1: #1a7a4c;
+            --tier2: #2563eb;
+            --tier3: #d97706;
+            --tier4: #dc2626;
+            --canada: #dc2626;
+            --hk: #9333ea;
+            --usa: #2563eb;
+            --border: rgba(26, 26, 46, 0.08);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+            --radius: 12px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(165deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(201, 85, 61, 0.08) 0%, transparent 70%);
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--paper), transparent);
+        }
+
+        @keyframes heroGlow {
+            0% { transform: translateY(-5%) rotate(-2deg); opacity: 0.6; }
+            100% { transform: translateY(5%) rotate(2deg); opacity: 1; }
+        }
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 100px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s ease infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+
+        .hero h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            color: white;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-light), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.6);
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: white;
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 4px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: fadeInUp 0.8s ease 1s both;
+        }
+
+        .scroll-indicator a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .scroll-indicator svg {
+            animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(250, 249, 247, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            height: 64px;
+            gap: 1rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .nav-inner::-webkit-scrollbar { display: none; }
+
+        .nav-brand {
+            font-family: 'Noto Serif SC', serif;
+            font-weight: 700;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--ink);
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            flex-shrink: 0;
+            margin-left: auto;
+        }
+
+        .nav-link {
+            padding: 6px 14px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--ink-muted);
+            text-decoration: none;
+            border-radius: 6px;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: var(--accent-glow);
+            color: var(--accent);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* ===== STUDENT PROFILE CARD ===== */
+        .profile-section {
+            margin-bottom: 5rem;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 2.5rem;
+            color: white;
+        }
+
+        .profile-header h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-header p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        .profile-body {
+            padding: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .profile-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .profile-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .profile-icon.school { background: #e8f4fd; color: #2c5282; }
+        .profile-icon.major { background: #fef3e2; color: #b8860b; }
+        .profile-icon.gpa { background: #fde8e8; color: #c9553d; }
+        .profile-icon.trend { background: #e6f9ef; color: #2d7a4f; }
+        .profile-icon.target { background: #f0e6ff; color: #6b21a8; }
+        .profile-icon.grad { background: #e8f8f5; color: #0d9488; }
+
+        .profile-item-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-muted);
+            margin-bottom: 2px;
+        }
+
+        .profile-item-value {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        /* ===== STRATEGY BOX ===== */
+        .strategy-section {
+            margin-bottom: 5rem;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .strategy-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .strategy-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .strategy-card.challenge {
+            border-left: 4px solid var(--accent);
+        }
+
+        .strategy-card.advantage {
+            border-left: 4px solid var(--green);
+        }
+
+        .strategy-card.action {
+            border-left: 4px solid var(--blue);
+        }
+
+        .strategy-card h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .strategy-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .strategy-card li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: var(--ink-light);
+        }
+
+        .strategy-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.85rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--ink-muted);
+            opacity: 0.4;
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-header h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            color: var(--ink-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ===== TIER TABS ===== */
+        .tier-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 2rem;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: white;
+        }
+
+        .tier-tab {
+            flex: 1;
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            background: transparent;
+            color: var(--ink-muted);
+            white-space: nowrap;
+        }
+
+        .tier-tab:hover {
+            background: var(--paper-warm);
+        }
+
+        .tier-tab.active {
+            color: white;
+        }
+
+        .tier-tab.active[data-tier="1"] { background: var(--tier1); }
+        .tier-tab.active[data-tier="2"] { background: var(--tier2); }
+        .tier-tab.active[data-tier="3"] { background: var(--tier3); }
+        .tier-tab.active[data-tier="4"] { background: var(--tier4); }
+
+        /* ===== SCHOOL CARDS ===== */
+        .schools-grid {
+            display: grid;
+            gap: 1.2rem;
+        }
+
+        .school-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            animation: cardIn 0.4s ease both;
+        }
+
+        .school-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: rgba(26, 26, 46, 0.15);
+        }
+
+        @keyframes cardIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .school-card-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            gap: 1rem;
+        }
+
+        .school-card-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            min-width: 0;
+        }
+
+        .school-rank {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .school-rank.tier1 { background: var(--tier1); }
+        .school-rank.tier2 { background: var(--tier2); }
+        .school-rank.tier3 { background: var(--tier3); }
+        .school-rank.tier4 { background: var(--tier4); }
+
+        .school-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--ink);
+            line-height: 1.3;
+        }
+
+        .school-program {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            margin-top: 2px;
+        }
+
+        .school-card-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .school-region {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .school-region.canada { background: #fde8e8; color: var(--canada); }
+        .school-region.hk { background: #f3e8ff; color: var(--hk); }
+        .school-region.usa { background: #dbeafe; color: var(--usa); }
+
+        .school-probability {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: #e6f9ef;
+            color: var(--tier1);
+        }
+
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--paper-warm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .school-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .school-card-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .school-card.expanded .school-card-body {
+            max-height: 800px;
+        }
+
+        .school-card-content {
+            padding: 0 2rem 2rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+
+        .school-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .school-detail {
+            font-size: 0.85rem;
+        }
+
+        .school-detail-label {
+            color: var(--ink-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px;
+        }
+
+        .school-detail-value {
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        .school-reason {
+            background: var(--accent-glow);
+            border-radius: var(--radius-sm);
+            padding: 1rem 1.25rem;
+            font-size: 0.88rem;
+            color: var(--ink-light);
+            margin-top: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .school-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 1rem;
+            padding: 8px 16px;
+            background: var(--ink);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .school-link:hover {
+            background: var(--accent);
+        }
+
+        /* ===== TIMELINE ===== */
+        .timeline-section {
+            margin: 5rem 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--blue), var(--green));
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 16px;
+            top: 4px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--accent);
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(2) .timeline-dot { border-color: var(--gold); }
+        .timeline-item:nth-child(3) .timeline-dot { border-color: var(--blue); }
+        .timeline-item:nth-child(4) .timeline-dot { border-color: var(--green); }
+        .timeline-item:nth-child(5) .timeline-dot { border-color: var(--tier1); }
+
+        .timeline-date {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .timeline-desc {
+            font-size: 0.88rem;
+            color: var(--ink-muted);
+        }
+
+        /* ===== CAREER TABLE ===== */
+        .career-section {
+            margin: 5rem 0;
+        }
+
+        .career-table-wrap {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .career-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        .career-table thead {
+            background: var(--paper-warm);
+        }
+
+        .career-table th {
+            padding: 14px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .career-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            color: var(--ink-light);
+        }
+
+        .career-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .career-table tr:hover td {
+            background: var(--accent-glow);
+        }
+
+        .salary-range {
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        /* ===== IMMIGRATION SECTION ===== */
+        .immigration-section {
+            margin: 5rem 0;
+        }
+
+        .immigration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .immigration-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .immigration-card h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .immigration-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .immigration-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            color: var(--ink-light);
+            line-height: 1.6;
+        }
+
+        .immigration-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e6f9ef, #f0fdf4);
+            border: 1px solid rgba(45, 122, 79, 0.2);
+            border-radius: var(--radius-sm);
+            padding: 1rem 1.25rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        /* ===== ACTION ITEMS ===== */
+        .actions-section {
+            margin: 5rem 0;
+        }
+
+        .action-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .action-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s ease;
+        }
+
+        .action-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .action-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--ink);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .action-text {
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .action-text strong {
+            color: var(--accent);
+        }
+
+        /* ===== RECOMMENDED COMBO ===== */
+        .combo-section {
+            margin: 5rem 0;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .combo-section h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .combo-tier {
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .combo-tier h4 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .combo-tier h4 .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .combo-tier ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .combo-tier li {
+            padding: 4px 0;
+            font-size: 0.85rem;
+            color: var(--ink-light);
+        }
+
+        /* ===== DISCLAIMER ===== */
+        .disclaimer {
+            margin: 4rem 0 2rem;
+            padding: 2rem;
+            background: #fff8e8;
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            color: var(--ink-light);
+            line-height: 1.8;
+        }
+
+        .disclaimer h3 {
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--ink-muted);
+            font-size: 0.82rem;
+        }
+
+        /* ===== FILTER REGION BUTTONS ===== */
+        .region-filters {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .region-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: white;
+            color: var(--ink-muted);
+            transition: all 0.2s ease;
+        }
+
+        .region-btn:hover {
+            border-color: var(--ink-muted);
+        }
+
+        .region-btn.active {
+            border-color: transparent;
+            color: white;
+        }
+
+        .region-btn.active[data-region="all"] { background: var(--ink); }
+        .region-btn.active[data-region="canada"] { background: var(--canada); }
+        .region-btn.active[data-region="hk"] { background: var(--hk); }
+        .region-btn.active[data-region="usa"] { background: var(--usa); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .main { padding: 2rem 1rem; }
+            .hero-stats { gap: 2rem; }
+            .profile-body { padding: 1.5rem; }
+            .school-card-header { padding: 1.2rem 1.5rem; }
+            .school-card-content { padding: 0 1.5rem 1.5rem; }
+            .school-details { grid-template-columns: 1fr; }
+            .nav-inner { padding: 0 1rem; }
+            .combo-section { padding: 1.5rem; }
+            .timeline::before { left: 16px; }
+            .timeline-item { padding-left: 48px; }
+            .timeline-dot { left: 8px; }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            .hero { min-height: auto; padding: 3rem; }
+            .nav { display: none; }
+            .school-card-body { max-height: none !important; }
+            .school-card .expand-icon { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+        <div class="hero-badge">2027 Fall入学</div>
+        <h1>绮洋硕士申请<br><span>综合规划方案</span></h1>
+        <p class="hero-subtitle">基于独特背景的精准选校策略，覆盖加拿大、香港、美国三大地区</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-value">28+</div>
+                <div class="hero-stat-label">精选项目</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-value">3</div>
+                <div class="hero-stat-label">国家/地区</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-value">70%+</div>
+                <div class="hero-stat-label">首梯队录取率</div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <a href="#content">
+            <span>向下浏览</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <div class="nav-brand">申请规划</div>
+        <div class="nav-links">
+            <a href="#profile" class="nav-link">绮洋背景</a>
+            <a href="#strategy" class="nav-link">核心策略</a>
+            <a href="#schools" class="nav-link">院校推荐</a>
+            <a href="#timeline" class="nav-link">时间线</a>
+            <a href="#career" class="nav-link">就业前景</a>
+            <a href="#immigration" class="nav-link">移民路径</a>
+            <a href="#actions" class="nav-link">行动清单</a>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main" id="content">
+
+    <!-- STUDENT PROFILE -->
+    <section class="profile-section" id="profile">
+        <div class="profile-card">
+            <div class="profile-header">
+                <h2>学生背景档案</h2>
+                <p>University of Toronto · Mathematics & Statistics</p>
+            </div>
+            <div class="profile-body">
+                <div class="profile-item">
+                    <div class="profile-icon school">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V10l7-5 7 5v10"/><path d="M9 20v-5h6v5"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">院校</div>
+                        <div class="profile-item-value">University of Toronto(加拿大 #1, 全球 Top 20)</div>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon major">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">专业</div>
+                        <div class="profile-item-value">Mat & Stats 双主修专业</div>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon gpa">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">累积 CGPA</div>
+                        <div class="profile-item-value">2.0(受大一影响)</div>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon trend">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">最后两年 GPA</div>
+                        <div class="profile-item-value">3.5 - 3.7(强上升趋势)</div>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">申请方向</div>
+                        <div class="profile-item-value">统计 / 数据科学 / 金融数学 / 管理分析 等</div>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon grad">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div>
+                        <div class="profile-item-label">目标入学</div>
+                        <div class="profile-item-value">2027年秋季(2027年6月毕业)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section class="strategy-section" id="strategy">
+        <div class="section-header">
+            <h2>核心策略分析</h2>
+            <p>针对GPA挑战的精准应对方案</p>
+        </div>
+        <div class="strategy-grid">
+            <div class="strategy-card challenge">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 核心挑战</h3>
+                <ul>
+                    <li>CGPA 2.0 远低于多数硕士项目最低要求(通常 B+/3.3)</li>
+                    <li>大一确诊心理疾病导致成绩受影响</li>
+                    <li>部分项目存在硬性 CGPA 门槛</li>
+                </ul>
+            </div>
+            <div class="strategy-card advantage">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 有利因素</h3>
+                <ul>
+                    <li>UofT 名校背景 — 加拿大最难数学系, GPA deflation 严重</li>
+                    <li>可以提供中国建设银行, 中国电信和加拿大亚马逊实习记录和推荐信</li>
+                    <li>强上升趋势 — 大二起 GPA 3.5+，展示真实学术能力</li>
+                    <li>有确诊医疗文件可解释大一成绩</li>
+                    <li>Math + Stats 双专业，覆盖面极广</li>
+                    <li>部分项目明确看"最后两年/60学分"GPA</li>
+                </ul>
+            </div>
+            <div class="strategy-card action">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> 关键策略</h3>
+                <ul>
+                    <li>锁定"看最后两年GPA"的项目 — 按照目前水平来看, 满足条件</li>
+                    <li>准备 Statement of Extenuating Circumstances</li>
+                    <li>获取学术顾问 + 心理健康专业人士支持信</li>
+                    <li>考GRE高分弥补GPA(目标 325+)</li>
+                    <li>优先申请授课型硕士(门槛比研究型低), 也就是M.Eng这类为主</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOLS -->
+    <section class="schools-section" id="schools">
+        <div class="section-header">
+            <h2>院校推荐 · 按录取概率排序</h2>
+            <p>共28+精选项目，按录取概率从高到低排列</p>
+        </div>
+
+        <!-- Region Filter -->
+        <div class="region-filters">
+            <button class="region-btn active" data-region="all" onclick="filterRegion('all')">全部</button>
+            <button class="region-btn" data-region="canada" onclick="filterRegion('canada')">🇨🇦 加拿大</button>
+            <button class="region-btn" data-region="hk" onclick="filterRegion('hk')">🇭🇰 香港</button>
+            <button class="region-btn" data-region="usa" onclick="filterRegion('usa')">🇺🇸 美国</button>
+        </div>
+
+        <!-- Tier Tabs -->
+        <div class="tier-tabs">
+            <button class="tier-tab active" data-tier="1" onclick="filterTier(1)">第一梯队 70%+</button>
+            <button class="tier-tab" data-tier="2" onclick="filterTier(2)">第二梯队 60-70%</button>
+            <button class="tier-tab" data-tier="3" onclick="filterTier(3)">第三梯队 40-60%</button>
+            <button class="tier-tab" data-tier="4" onclick="filterTier(4)">第四梯队 20-40%</button>
+        </div>
+
+        <div class="schools-grid" id="schoolsGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-header">
+            <h2>申请时间线</h2>
+            <p>2027秋季入学完整时间规划</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026年夏-秋</div>
+                <div class="timeline-title">准备阶段</div>
+                <div class="timeline-desc">考GRE(目标325+)、准备申请材料、联系推荐人、撰写解释信</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026年9月起</div>
+                <div class="timeline-title">香港院校开放申请</div>
+                <div class="timeline-desc">香港项目越早申请越有利，建议第一轮即提交</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026年12月 - 2027年2月</div>
+                <div class="timeline-title">主力申请提交</div>
+                <div class="timeline-desc">加拿大(截止多在1月)、美国(截止多在12月-1月)分批提交</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2027年3-5月</div>
+                <div class="timeline-title">等待结果 & 确认</div>
+                <div class="timeline-desc">收到offer后比较选择, 确认入学并缴纳押金</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2027年6月 → 9月</div>
+                <div class="timeline-title">毕业 & 入学</div>
+                <div class="timeline-desc">UofT毕业, 准备入学手续, 开启硕士旅程</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREER -->
+    <section class="career-section" id="career">
+        <div class="section-header">
+            <h2>就业前景汇总</h2>
+            <p>硕士毕业后各方向的典型就业情况</p>
+        </div>
+        <div class="career-table-wrap">
+            <table class="career-table">
+                <thead>
+                    <tr>
+                        <th>方向</th>
+                        <th>典型职位</th>
+                        <th>起薪范围</th>
+                        <th>主要雇主</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>数据科学</strong></td>
+                        <td>Data Scientist, ML Engineer</td>
+                        <td><span class="salary-range">$80K–$130K</span></td>
+                        <td>科技公司、银行</td>
+                    </tr>
+                    <tr>
+                        <td><strong>金融数学/量化</strong></td>
+                        <td>Quant Analyst, Risk Analyst</td>
+                        <td><span class="salary-range">$85K–$150K+</span></td>
+                        <td>银行、对冲基金</td>
+                    </tr>
+                    <tr>
+                        <td><strong>统计/生物统计</strong></td>
+                        <td>Biostatistician, Statistical Analyst</td>
+                        <td><span class="salary-range">$65K–$90K</span></td>
+                        <td>药企、CRO、政府</td>
+                    </tr>
+                    <tr>
+                        <td><strong>商业分析</strong></td>
+                        <td>Business Analyst, Strategy Analyst</td>
+                        <td><span class="salary-range">$70K–$95K</span></td>
+                        <td>咨询公司、银行</td>
+                    </tr>
+                    <tr>
+                        <td><strong>计算机科学</strong></td>
+                        <td>Software Engineer, SDE</td>
+                        <td><span class="salary-range">$90K–$150K+</span></td>
+                        <td>FAANG、初创公司</td>
+                    </tr>
+                    <tr>
+                        <td><strong>管理/AI</strong></td>
+                        <td>Product Manager, AI PM</td>
+                        <td><span class="salary-range">$80K–$120K</span></td>
+                        <td>科技公司、咨询</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- IMMIGRATION -->
+    <section class="immigration-section" id="immigration">
+        <div class="section-header">
+            <h2>加拿大移民与工签路径</h2>
+            <p>硕士毕业后的长期身份规划</p>
+        </div>
+        <div class="immigration-grid">
+            <div class="immigration-card">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> 毕业工签 (PGWP)</h3>
+                <ul>
+                    <li>学制 ≥ 2年：获得 <strong>3年</strong> 开放工签</li>
+                            <li>学制 8个月–2年：鉴于是Master, 根据IRCC新规规定从2024年开始，都是3年工签，所以不用担心了<a href=https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html>IRCC原文</a></li>
+                    <li>毕业后180天内申请</li>
+                </ul>
+            </div>
+            <div class="immigration-card">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Ontario 省提名 (OINP)</h3>
+                <ul>
+                    <li>在Ontario完成硕士学位</li>
+                    <li>CLB 7 英语水平</li>
+                    <li><strong>不需要 job offer！</strong></li>
+                    <li>居住在Ontario的意向即可</li>
+                </ul>
+                <div class="highlight-box">
+                    如选择UofT/Schulich等Ontario项目，毕业可直接走此通道申请永久居民，但是现在省提名很难，尤其是硕博类，所以主要走第三个Express Entry
+                </div>
+            </div>
+            <div class="immigration-card">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Express Entry</h3>
+                <ul>
+                    <li><strong>CEC</strong>：1年加拿大工作经验即可申请</li>
+                    <li><strong>FSW</strong>：67/100评分制（教育、语言、经验等）</li>
+                    <li><strong>PNP</strong>：各省提名快速通道</li>
+                </ul>
+            </div>
+            <div class="immigration-card">
+                <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> 就业市场</h3>
+                <ul>
+                    <li><strong>Toronto</strong>：金融 + Tech（北美第三大tech hub）</li>
+                    <li><strong>Vancouver</strong>：Amazon, Microsoft, SAP, EA</li>
+                    <li><strong>Waterloo/KW</strong>：Tech startup ecosystem</li>
+                    <li>数据科学起薪: <strong>CAD $70,000–$100,000+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDED COMBO -->
+    <section class="combo-section">
+        <h2>建议申请组合（12–15所）</h2>
+        <div class="combo-grid">
+            <div class="combo-tier" style="background: rgba(26,122,76,0.04);">
+                <h4><span class="dot" style="background: var(--tier1);"></span> 第一梯队 · 全部申请（5所）</h4>
+                <ul>
+                    <li>UofT Master of Information</li>
+                    <li>UofT MEng Industrial Engineering</li>
+                    <li>UBC Master of Data Science</li>
+                    <li>UVic MSc Math/Stats</li>
+                    <li>TMU MSc Data Science</li>
+                </ul>
+            </div>
+            <div class="combo-tier" style="background: rgba(37,99,235,0.04);">
+                <h4><span class="dot" style="background: var(--tier2);"></span> 第二梯队 · 选4所</h4>
+                <ul>
+                    <li>Schulich MMAI</li>
+                    <li>UofT MScAC</li>
+                    <li>UofT MSc Statistics</li>
+                    <li>HKBU 相关项目</li>
+                </ul>
+            </div>
+            <div class="combo-tier" style="background: rgba(217,119,6,0.04);">
+                <h4><span class="dot" style="background: var(--tier3);"></span> 第三梯队 · 选3所</h4>
+                <ul>
+                    <li>UofT MMF (金融数学)</li>
+                    <li>Queen's MSc Math/Stats</li>
+                    <li>Waterloo MDSAI</li>
+                </ul>
+            </div>
+            <div class="combo-tier" style="background: rgba(220,38,38,0.04);">
+                <h4><span class="dot" style="background: var(--tier4);"></span> 第四梯队 · 冲刺1-2所</h4>
+                <ul>
+                    <li>Columbia MA Statistics</li>
+                    <li>（如GRE高分）</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIONS -->
+    <section class="actions-section" id="actions">
+        <div class="section-header">
+            <h2>核心行动清单</h2>
+            <p>立即开始的关键步骤</p>
+        </div>
+        <div class="action-list">
+            <div class="action-item">
+                <div class="action-number">1</div>
+                <div class="action-text"><strong>立即</strong>：计算 last-60-credits GPA（大二起所有课程的GPA），确认精确数值</div>
+            </div>
+            <div class="action-item">
+                <div class="action-number">2</div>
+                <div class="action-text"><strong>考GRE</strong>：目标 Quant 168+, Verbal 155+, AW 4.0+，高分可显著弥补GPA</div>
+            </div>
+            <div class="action-item">
+                <div class="action-number">3</div>
+                <div class="action-text"><strong>撰写解释信</strong>：简短、正面、附医疗文件支持，讲述 growth story</div>
+            </div>
+            <div class="action-item">
+                <div class="action-number">4</div>
+                <div class="action-text"><strong>联系推荐人</strong>：确保获得2封学术推荐信（大二后教你且给分好的教授），然后我会用Amazon邮箱给你写一封工作推荐信</div>
+            </div>
+            <div class="action-item">
+                <div class="action-number">5</div>
+                <div class="action-text"><strong>补充编程</strong>：大四选修 CSC148 或同等课程，增强Data Science方向竞争力</div>
+            </div>
+            <div class="action-item">
+                <div class="action-number">6</div>
+                <div class="action-text"><strong>广撒网</strong>：加拿大为主（移民优势）、香港和美国为辅，12-15所分批提交</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+        <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 重要声明</h3>
+        <p>等回多伦多，我们需要直接邮件联系各项目 Graduate Admissions Office 说明情况（upward trend + medical documentation），确认是否值得申请。</p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>绮洋硕士申请综合规划方案</p>
+</footer>
+
+<script>
+// ===== SCHOOL DATA =====
+const schools = [
+    // TIER 1
+    { tier: 1, rank: 1, name: "University of Toronto", program: "Master of Information (Human-Centred Data Science)", region: "canada", probability: "90%+", gpaPolicy: "B average", duration: "2年", deadline: "January 31", gre: "不要求", reason: "只要B average，你3.5-3.7远超。2年学制→3年PGWP。本校优势。Human-Centred Data Science方向完美匹配Stats背景。", link: "https://www.sgs.utoronto.ca/programs/information/" },
+    { tier: 1, rank: 2, name: "University of Toronto", program: "MEng Industrial Engineering (OR/ML方向)", region: "canada", probability: "80%+", gpaPolicy: "Mid-B (73-76%) in final 2 years", duration: "1-1.5年", deadline: "待确认", gre: "不要求", reason: "Mid-B in final two years = 极低门槛。Operations Research / Applied ML方向与Math+Stats完美匹配。本校生找supervisor方便。", link: "https://www.sgs.utoronto.ca/programs/mechanical-and-industrial-engineering/" },
+    { tier: 1, rank: 3, name: "UBC", program: "Master of Data Science (MDS)", region: "canada", probability: "85%+", gpaPolicy: "B+ in 3rd & 4th year courses only", duration: "10个月", deadline: "待确认", gre: "不要求", reason: "明确只看大三大四成绩！你的3.5-3.7远超76%要求。Vancouver tech hub就业优势。", link: "https://masterdatascience.ubc.ca/admissions" },
+    { tier: 1, rank: 4, name: "University of Victoria", program: "MSc Mathematics and Statistics", region: "canada", probability: "90%+", gpaPolicy: "B in last 2 years", duration: "2年", deadline: "待确认", gre: "不要求", reason: "最低门槛（B=73%）in last two years。2年学制→3年PGWP。学费仅~$6,000/年。", link: "https://www.uvic.ca/graduate/admissions/admission-requirements/" },
+    { tier: 1, rank: 5, name: "Toronto Metropolitan University", program: "MSc Data Science and Analytics", region: "canada", probability: "85%+", gpaPolicy: "B (3.0) in last 2 years", duration: "1-2年", deadline: "待确认", gre: "不要求", reason: "B (3.0) in last two years比B+更低，你3.5-3.7远超。Toronto就业便利。", link: "https://www.torontomu.ca/graduate/programs/data-science-analytics/" },
+    // TIER 2
+    { tier: 2, rank: 7, name: "York University - Schulich", program: "Master of Management in AI (MMAI)", region: "canada", probability: "75%", gpaPolicy: "B+ in last 2 years", duration: "12个月", deadline: "分批(Jul/Sep/Nov/Feb)", gre: "不要求", reason: "明确看last two years。AI/ML产业导向。Toronto就业市场。需补编程先修。", link: "https://www.schulich.yorku.ca/programs/master-of-management-in-artificial-intelligence/" },
+    { tier: 2, rank: 8, name: "University of Toronto", program: "MScAC (Data Science Concentration)", region: "canada", probability: "70%", gpaPolicy: "B+ in final year", duration: "16个月", deadline: "December 1", gre: "不要求", reason: "看final year + 本校优势。8个月课程+8个月industry internship。学费仅~$25,000 (domestic)。", link: "https://mscac.utoronto.ca/apply/" },
+    { tier: 2, rank: 9, name: "University of Toronto", program: "MSc Statistics（本系硕士）", region: "canada", probability: "65%", gpaPolicy: "Mid-B in final year", duration: "2年", deadline: "January 22", gre: "不要求", reason: "本系直升！Mid-B in final year你远超。最直接的专业延续。但research MSc竞争较高。", link: "https://www.sgs.utoronto.ca/programs/statistics/" },
+    { tier: 2, rank: 10, name: "Wilfrid Laurier University", program: "MSc Mathematics", region: "canada", probability: "70%", gpaPolicy: "B+ in final year", duration: "2年", deadline: "待确认", gre: "不要求", reason: "看final year，小学校竞争较小。Waterloo, Ontario - OINP eligible。", link: "https://www.wlu.ca/programs/science/graduate/mathematics-msc/" },
+    { tier: 2, rank: 11, name: "Hong Kong Baptist University", program: "MSc Data Analytics / Math Finance / OR", region: "hk", probability: "75%", gpaPolicy: "Holistic (无硬性GPA公布)", duration: "1年", deadline: "2026年9月起", gre: "不要求", reason: "门槛低，holistic admission。统计背景强加分。UofT毕业可免英语。", link: "https://ar.hkbu.edu.hk/tpg-admissions/programmes" },
+    { tier: 2, rank: 12, name: "Stevens Institute of Technology", program: "MS in Data Science", region: "usa", probability: "70%", gpaPolicy: "无硬性GPA cutoff", duration: "2年", deadline: "Rolling", gre: "Optional", reason: "GRE optional + 无硬性GPA cutoff。Hoboken, NJ = NYC就业圈。", link: "https://www.stevens.edu/program/data-science-masters" },
+    { tier: 2, rank: 13, name: "Carleton University", program: "MSc Mathematics and Statistics", region: "canada", probability: "70%", gpaPolicy: "B+ in last 2 years (待确认)", duration: "2年", deadline: "待确认", gre: "不要求", reason: "Ottawa学校friendlier admission。联邦政府统计局就业机会。OINP eligible。", link: "" },
+    // TIER 3
+    { tier: 3, rank: 14, name: "University of Toronto", program: "Master of Mathematical Finance (MMF)", region: "canada", probability: "55%", gpaPolicy: "Mid-B", duration: "12个月(含internship)", deadline: "December 14", gre: "不要求(domestic)", reason: "Mid-B门槛低，Math+Stats是ideal candidate。极强就业(quant/fintech)。但~500申请竞争。", link: "https://www.sgs.utoronto.ca/programs/mathematical-finance/" },
+    { tier: 3, rank: 15, name: "Queen's University", program: "MSc Mathematics and Statistics", region: "canada", probability: "55%", gpaPolicy: "B+ in previous studies", duration: "12-24个月", deadline: "January 15", gre: "不要求", reason: "B+ in 'previous studies'措辞可能指最近成绩。Kingston, Ontario - OINP eligible。", link: "https://www.queensu.ca/mathstat/graduate/prospective-graduate/application-info" },
+    { tier: 3, rank: 16, name: "University of Waterloo", program: "MDSAI (Data Science and AI)", region: "canada", probability: "50%", gpaPolicy: "78% overall average", duration: "待确认", deadline: "Jan 15 / Jul 1 / Nov 1", gre: "不要求", reason: "多个入学时间点增加机会。Math+Stats背景perfect match。Co-op选项。", link: "https://uwaterloo.ca/graduate-studies-postdoctoral-affairs/future-students/programs/data-science-and-artificial-intelligence-mdsai-waterloo" },
+    { tier: 3, rank: 17, name: "University of Waterloo", program: "MMath Statistics", region: "canada", probability: "50%", gpaPolicy: "78% overall from Canadian uni", duration: "16个月", deadline: "January 6", gre: "不要求", reason: "直系专业。78%对应B+/3.3，最后两年你达标，但写的是overall。需解释信。", link: "https://uwaterloo.ca/graduate-studies-postdoctoral-affairs/future-students/programs/statistics-mmath-waterloo" },
+    { tier: 3, rank: 18, name: "CUHK (香港中文大学)", program: "MSc Data Science / Business Analytics", region: "hk", probability: "50%", gpaPolicy: "Holistic (通常2:1或等同)", duration: "1年", deadline: "2026年9月起", gre: "加分", reason: "Holistic review。数学统计背景在BA申请中非常加分。港中大排名高。", link: "https://www.gs.cuhk.edu.hk/admissions/programme/science" },
+    { tier: 3, rank: 19, name: "City University of Hong Kong", program: "MSc Data Science / Financial Math", region: "hk", probability: "50%", gpaPolicy: "Holistic", duration: "1年", deadline: "待确认", gre: "不要求", reason: "城大对GPA要求相对灵活，重视工作经验和statement。", link: "https://www.cityu.edu.hk/pg/programme/" },
+    { tier: 3, rank: 20, name: "McMaster University", program: "MSc Mathematics and Statistics", region: "canada", probability: "45%", gpaPolicy: "B+ (需确认政策)", duration: "2年", deadline: "待确认", gre: "不要求", reason: "Hamilton, Ontario - OINP eligible。有Financial Mathematics方向。", link: "https://gs.mcmaster.ca/" },
+    { tier: 3, rank: 21, name: "SFU", program: "MSc Statistics", region: "canada", probability: "40%", gpaPolicy: "CGPA 3.0", duration: "2年", deadline: "January 9", gre: "不要求", reason: "CGPA 3.0要求你cumulative不满足（2.0），但可用解释信+最后两年策略尝试。", link: "https://www.sfu.ca/stat-actsci/graduate/prospective-students/admissions.html" },
+    // TIER 4
+    { tier: 4, rank: 22, name: "University of Toronto", program: "MA Economics", region: "canada", probability: "35%", gpaPolicy: "Mid-B", duration: "1年", deadline: "January 16", gre: "Recommended", reason: "Mid-B门槛，Math+Stats背景是优势。但UofT Economics department极competitive。", link: "https://www.sgs.utoronto.ca/programs/economics/" },
+    { tier: 4, rank: 23, name: "McGill University", program: "MSc Statistics / Mathematics", region: "canada", probability: "35%", gpaPolicy: "CGPA 3.0 (可能看cumulative)", duration: "2年", deadline: "待确认", gre: "不要求", reason: "加拿大Top 2，但通常看cumulative GPA较严格。", link: "https://www.mcgill.ca/mathstat/" },
+    { tier: 4, rank: 24, name: "UBC", program: "MSc Statistics", region: "canada", probability: "30%", gpaPolicy: "B+ overall average", duration: "2年", deadline: "12月中旬", gre: "不要求", reason: "'B+ overall'可能指cumulative，对你较不利。但UofT名校背景加分。", link: "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/master-of-science-statistics" },
+    { tier: 4, rank: 25, name: "UofT Rotman", program: "Master of Management Analytics (MMA)", region: "canada", probability: "30%", gpaPolicy: "Holistic review", duration: "12个月", deadline: "待确认", gre: "不要求", reason: "Holistic review但通常要1-2年工作经验。加拿大#1 Business Analytics。", link: "https://www.rotman.utoronto.ca/degrees/mastersprograms/mma" },
+    { tier: 4, rank: 26, name: "Columbia University", program: "MA in Statistics", region: "usa", probability: "25%", gpaPolicy: "Strong quant background + GRE", duration: "1.5年", deadline: "待确认", gre: "Recommended", reason: "极competitive，但MA项目门槛比PhD低。NYC金融中心就业极好。需高GRE。", link: "https://stat.columbia.edu/ma-program/" },
+    { tier: 4, rank: 27, name: "NYU", program: "MS in Data Science", region: "usa", probability: "20%", gpaPolicy: "Strong math/CS + GRE", duration: "2年", deadline: "待确认", gre: "Required", reason: "极competitive。NYC tech & finance就业。需高GRE + 强statement。", link: "https://cds.nyu.edu/ms-in-data-science/" },
+];
+
+// ===== STATE =====
+let currentTier = 1;
+let currentRegion = 'all';
+
+// ===== RENDER =====
+function renderSchools() {
+    const grid = document.getElementById('schoolsGrid');
+    const filtered = schools.filter(s => {
+        const tierMatch = s.tier === currentTier;
+        const regionMatch = currentRegion === 'all' || s.region === currentRegion;
+        return tierMatch && regionMatch;
+    });
+
+    if (filtered.length === 0) {
+        grid.innerHTML = '<p style="text-align:center; padding:3rem; color:var(--ink-muted);">该筛选条件下暂无项目</p>';
+        return;
+    }
+
+    grid.innerHTML = filtered.map((s, i) => `
+        <div class="school-card" data-region="${s.region}" style="animation-delay: ${i * 0.05}s">
+            <div class="school-card-header" onclick="toggleCard(this)">
+                <div class="school-card-left">
+                    <div class="school-rank tier${s.tier}">${s.rank}</div>
+                    <div>
+                        <div class="school-name">${s.name}</div>
+                        <div class="school-program">${s.program}</div>
+                    </div>
+                </div>
+                <div class="school-card-right">
+                    <span class="school-region ${s.region}">${s.region === 'canada' ? '加拿大' : s.region === 'hk' ? '香港' : '美国'}</span>
+                    <span class="school-probability">${s.probability}</span>
+                    <span class="expand-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </div>
+            </div>
+            <div class="school-card-body">
+                <div class="school-card-content">
+                    <div class="school-details">
+                        <div class="school-detail">
+                            <div class="school-detail-label">GPA政策</div>
+                            <div class="school-detail-value">${s.gpaPolicy}</div>
+                        </div>
+                        <div class="school-detail">
+                            <div class="school-detail-label">学制</div>
+                            <div class="school-detail-value">${s.duration}</div>
+                        </div>
+                        <div class="school-detail">
+                            <div class="school-detail-label">截止日期</div>
+                            <div class="school-detail-value">${s.deadline}</div>
+                        </div>
+                        <div class="school-detail">
+                            <div class="school-detail-label">GRE</div>
+                            <div class="school-detail-value">${s.gre}</div>
+                        </div>
+                    </div>
+                    <div class="school-reason">
+                        <strong>适合原因：</strong>${s.reason}
+                    </div>
+                    ${s.link ? `<a href="${s.link}" target="_blank" class="school-link">查看官网 →</a>` : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleCard(header) {
+    const card = header.closest('.school-card');
+    card.classList.toggle('expanded');
+}
+
+function filterTier(tier) {
+    currentTier = tier;
+    document.querySelectorAll('.tier-tab').forEach(t => t.classList.remove('active'));
+    document.querySelector(`.tier-tab[data-tier="${tier}"]`).classList.add('active');
+    renderSchools();
+}
+
+function filterRegion(region) {
+    currentRegion = region;
+    document.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.region-btn[data-region="${region}"]`).classList.add('active');
+    renderSchools();
+}
+
+// ===== NAV HIGHLIGHT =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        if (window.scrollY >= top) {
+            current = section.getAttribute('id');
+        }
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// ===== INIT =====
+renderSchools();
+</script>
+
+</body>
+</html>
